@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+     <title>Shop</title>  
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+     crossorigin="anonymous">
+
+     
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+     crossorigin="anonymous"/>
+
+     <link rel="stylesheet" href="style.css">
+     <style>
+      .product img{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        object-fit: cover;
+      }
+
+      #featured > div:nth-child(10) > nav > ul > li.page-item.active > a{
+        background-color: black;
+      }
+
+      #featured > div:nth-child(10) > nav > ul > li:nth-child(n):hover>a{
+        background-color: coral;
+        color: #fff;
+      }
+
+      .pagination a {
+        color: #000;
+        
+      }
+     </style>
+    </head>
+ 
+  <body>
+
+    <!--NAVIGATION-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top" >
+        <div class="container">
+          <img src="img/logo/logo6.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="fas fa-bars" aria-hidden="true"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link shop" href="#">Shop</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+
+              <li class="nav-item">
+                <li><a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                 <li><a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                 <li><a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+               </li>         
+          </div>
+        </div>
+      </nav>
+
+      <section id="featured" class="my-5 py-5">
+        <div class="container text-center mt-5 py-5">
+          <h2 class="font-weight-bold">Our Featured</h2>
+          <hr>
+          <p>Here you can check out our new products with fair price on Shop-In</p>
+        </div>
+        <div class="row mx-auto container">
+          <div onclick="window.location.href='sproduct2.html';" class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Shoes shop/Shoes1.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">Men's Sport Shoes</h5>
+            <h4 class="p-price">$46.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Shoes shop/Shoes2.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Men's Sport Shoes</h5>
+            <h4 class="p-price">$16.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Shoes shop/Shoes3.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Men's Sport Shoes</h5>
+            <h4 class="p-price">$12.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Shoes shop/Shoes4.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Men's Sport Shoes</h5>
+            <h4 class="p-price">$13.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="row mx-auto container">
+          <div onclick="window.location.href='sproduct3.html';" class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Shoes shop/Shoes17.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Women's Sport Shoes</h5>
+            <h4 class="p-price">$46.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Shoes shop/Shoes6.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Women's Sport Shoes</h5>
+            <h4 class="p-price">$16.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Shoes shop/Shoes7.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Women's Sport Shoes</h5>
+            <h4 class="p-price">$12.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Shoes shop/Shoes8.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Women's Sport Shoes</h5>
+            <h4 class="p-price">$13.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="row mx-auto container">
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Shoes shop/Shoes9.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Kid's Sport Shoes</h5>
+            <h4 class="p-price">$46.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Shoes shop/Shoes10.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Kid's Sport Shoes</h5>
+            <h4 class="p-price">$16.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Shoes shop/Shoes11.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Kid's Sport Shoes</h5>
+            <h4 class="p-price">$12.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Shoes shop/Shoes12.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Kid's Sport Shoes</h5>
+            <h4 class="p-price">$13.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="row mx-auto container">
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Bag shop/Bag1.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Customized Hand Leather Bags</h5>
+            <h4 class="p-price">$46.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Bag shop/Bag2.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Customized Hand Leather Bags</h5>
+            <h4 class="p-price">$16.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Bag shop/Bag3.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Customized Hand Leather Bags</h5>
+            <h4 class="p-price">$12.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Bag shop/Bag4.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Customized Hand Leather Bags (2piece)</h5>
+            <h4 class="p-price">$13.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="row mx-auto container">
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Bag shop/Bag5.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Customized Paper Bags</h5>
+            <h4 class="p-price">$46.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Bag shop/Bag6.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Customized Cotton Cloth Bags</h5>
+            <h4 class="p-price">$16.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Bag shop/Bag7.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Customized Carry Bags</h5>
+            <h4 class="p-price">$12.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/Bag shop/Bag8.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Customized College Bags</h5>
+            <h4 class="p-price">$13.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="row mx-auto container">
+          <div onclick="window.location.href='sproduct.html';"class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/top/top1.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">JUNEBERRY top Trending Crop top for Women/Girls</h5>
+            <h4 class="p-price">$46.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/top/top2.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Dream Beauty Fashion Bishop Sleeves Square Neck Slim Top Polyester Blend (23" Inches)</h5>
+            <h4 class="p-price">$16.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/top/top3.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">SIGHTBOMB Ribbed Polo Collared Spaghetti Full Length Tops for Women</h5>
+            <h4 class="p-price">$12.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/top/top4.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Shasmi Casual Square Neck Full Sleeves 
+              Western Stylish Women's Tops/Tops for Girls </h5>
+            <h4 class="p-price">$13.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="row mx-auto container">
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/top/top5.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Jaanvi Brown & Red Geometric Printed Georgette Wrap Crop Top</h5>
+            <h4 class="p-price">$46.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/top/top6.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">MIZAGO Women's Top</h5>
+            <h4 class="p-price">$16.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/top/top7.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">CHKOKKO Women's Round Neck Full Sleeves Gym Crop Top</h5>
+            <h4 class="p-price">$12.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/top/top8.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">KNOTTY NEEDLES Women's Self Design Sleeveless Cotton Crop Top</h5>
+            <h4 class="p-price">$13.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+
+        
+
+        <div class="row mx-auto container">
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/bottel shop/bottel1.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              </div>
+            <h5 class="p-name">Metal Pink Water Bottel</h5>
+            <h4 class="p-price">$46.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/bottel shop/bottel2.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Trendy Glass Water Bottel</h5>
+            <h4 class="p-price">$16.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/bottel shop/bottel3.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">S'well Pink Topaz Bottel</h5>
+            <h4 class="p-price">$12.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/bottel shop/bottel4.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Trendy Copeer Water Bottel </h5>
+            <h4 class="p-price">$13.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="row mx-auto container">
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/bottel shop/bottel5.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Hydro Flask Water Bottel</h5>
+            <h4 class="p-price">$46.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/bottel shop/bottel6.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Leak Proof Sports Drinking Water bottel</h5>
+            <h4 class="p-price">$16.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/bottel shop/bottel7.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Flask,Hot and Cold Trendy Water Bottels</h5>
+            <h4 class="p-price">$12.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <div class="product text-centre col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-5" src="img/bottel shop/bottel8.jpg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+
+            </div>
+            <h5 class="p-name">Trendy Steel water Bottel</h5>
+            <h4 class="p-price">$13.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+
+          <nav aria-label="...">
+            <ul class="pagination mt-5">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+ 
+
+      <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+            <img src="img/logo/logo6.png" alt="">
+            <p class="pt-3">Hello, We are Shop-In we provide beautiful and convient platform for every gender 
+              to shop for their dream products and make themselves and their surroundings happy</p>
+             </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Featured</h5>
+          <ul class="text-uppercase list-unstyled">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Boys</a></li>
+            <li><a href="#">Girls</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Clothes</a></li>
+          </ul>
+          </div>
+          <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class="pb-2">Contact Us</h5>
+            <div>
+              <h6 class="text-uppercase">Address</h6>
+              <p>Vashishtha Vihar, Gomti Nagar, Lucknow</p>
+            </div>
+            <div>
+              <h6 class="text-uppercase">Phone</h6>
+              <p>(123) 456-7890</p>
+            </div>
+            <div>
+              <h6 class="text-uppercase">E-mail</h6>
+              <p>ShopIn.345@gmail.com</p>
+            </div>
+            </div>
+    
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+              <h5 class="pb-2">Instagram</h5>
+              <div class="row">
+                <img class="img-fluid w-25 h-100 m-2" src="img/insta/insta1.jpg" alt="">
+                <img class="img-fluid w-25 h-100 m-2" src="img/insta/insta2.jpg" alt="">
+                <img class="img-fluid w-25 h-100 m-2" src="img/insta/insta3.jpg" alt="">
+                <img class="img-fluid w-25 h-100 m-2" src="img/insta/insta4.jpg" alt="">
+                <img class="img-fluid w-25 h-100 m-2" src="img/insta/insta5.jpg" alt="">
+              </div>
+            </div>
+        </div>
+    
+        <div class="copyright mt-5">
+          <div class="row container mx-autp">
+    
+            <div class="col-lg-3 col-md-6 col-12 mb-4 ">
+              <img src="img/payment/payment2.png" alt="">
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+              <p>Shop-In eCommerce @ 2022. All Rights Reserved</p>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 col-12">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div> 
+      </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" 
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+     integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" 
+     crossorigin="anonymous"></script>
+
+ </body>  
+
+ </html>
